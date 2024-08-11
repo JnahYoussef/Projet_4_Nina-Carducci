@@ -243,6 +243,17 @@ input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
 }
+footer {
+	background-color: #1c6474;
+	padding-block: 2em;
+	color: white;
+	text-align: center;
+	p {
+	  a {
+		color: white;
+	  }
+	}
+  }
 
 @media all and (max-width: 1180px) {
 	.picture {
@@ -288,7 +299,7 @@ input[type="submit"] {
 		width: 100%;
 		max-width: 100%;
 		height: auto;
-		margin: 2em 0
+		margin: 2em 0;
 	}
 	.service__description{
 		margin-bottom: 1em;
@@ -351,6 +362,12 @@ input[type="submit"] {
 	}
 	.picture {
 		width: 80%;
+		object-fit: cover;
 	}
+	footer {
+		p {
+		  font-size: 0.8rem;
+		}
+	  }
 }
 

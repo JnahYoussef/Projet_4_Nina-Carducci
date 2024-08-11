@@ -3,12 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!--Meta description and title-->
+		<!--Meta title anddescription-->
 	<title>Nina Carducci: Photographe professionnelle à Bordeaux</title>
-	<meta name="description" content="Nina Carducci, photographe professionnelle à Bordeaux, réalise vos photos de portrait, de mariage, de concert, ou encore d'entreprise.">
+	<meta name="description" content="Site web de Nina Carducci, photographe capturant des moments uniques avec passion et créativité.">
+	
 	<link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="assets/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com" defer>
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Spectral:wght@300;400&display=swap" rel="stylesheet">
 </head>
@@ -37,13 +38,22 @@
 				</div>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100" alt="Homme d'affaires traversant un passage piéton">
+						<picture>
+							<source srcset="./assets/images/slider/ryoji-iwata-mobile.webp" media="(max-width: 768px)">
+							<img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100" alt="Homme d'affaires traversant un passage piéton">
+						</picture>
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100" alt="le public à un concert">
+						<picture>
+							<source srcset="./assets/images/slider/nicholas-green-mobile.webp" media="(max-width: 768px)">
+							<img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100" alt="le public à un concert">
+						</picture>
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/edward-cisneros.webp" class="d-block w-100" alt=" la danse des mariés">
+						<picture>
+							<source srcset="./assets/images/slider/edward-cisneros-mobile.webp" media="(max-width: 768px)">
+							<img src="./assets/images/slider/edward-cisneros.webp" class="d-block w-100" alt=" la danse des mariés">
+						</picture>
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -71,15 +81,15 @@
 			<h2 class="title">Portfolio</h2>
 			<div class="container py-3">
 				<div class="gallery" style="display: none">
-					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul.webp" alt="Public d'un concert"/> 
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou.webp" alt="Un homme d'affaires"/>
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman.webp" alt="Femme souriante assise sur une chaise en entreprise"/>
-					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing.webp"  alt="Mains dans les mains lors d'un mariage"/>
-					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji.webp"  alt="Portrait d'un homme qui ferment les yeux"/>
-					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens.webp"  alt="Mariés devant un Palmier"/>
-					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg.webp"  alt="Portrait d'une jeune fille avec lunettes"/>
-					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill.webp"  alt="Un chanteur à son concert"/>
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe.webp"  alt="Femme souriante devant son PC en entreprise "/>
+					<img data-gallery-tag="Concert" class="gallery-item" loading="lazy" src="./assets/images/gallery/concerts/aaron-paul.webp" alt="Public d'un concert"/> 
+					<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy" src="./assets/images/gallery/entreprise/ali-morshedlou.webp" alt="Un homme d'affaires"/>
+					<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy" src="./assets/images/gallery/entreprise/jason-goodman.webp" alt="Femme souriante assise sur une chaise en entreprise"/>
+					<img data-gallery-tag="Mariages" class="gallery-item" loading="lazy" src="./assets/images/gallery/mariage/hannah-busing.webp"  alt="Mains dans les mains lors d'un mariage"/>
+					<img data-gallery-tag="Portrait" class="gallery-item" loading="lazy" src="./assets/images/gallery/portraits/ade-tunji.webp"  alt="Portrait d'un homme qui ferment les yeux"/>
+					<img data-gallery-tag="Mariages" class="gallery-item" loading="lazy" src="./assets/images/gallery/mariage/jakob-owens.webp"  alt="Mariés devant un Palmier"/>
+					<img data-gallery-tag="Portrait" class="gallery-item" loading="lazy" src="./assets/images/gallery/portraits/nino-van-prattenburg.webp"  alt="Portrait d'une jeune fille avec lunettes"/>
+					<img data-gallery-tag="Concert" class="gallery-item" loading="lazy" src="./assets/images/gallery/concerts/austin-neill.webp"  alt="Un chanteur à son concert"/>
+					<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy" src="./assets/images/gallery/entreprise/mateus-campos-felipe.webp"  alt="Femme souriante devant son PC en entreprise "/>
 				</div>
 			</div>
 			<div class="quote">
@@ -141,28 +151,31 @@
 					<h2>Une question ? Une demande de devis ?</h2>
 					<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 					<form action="" method="post">
-						<label>Nom</label>
-						<input type="text" name="nom" id="nom">
-						<label>Email</label>
-						<input type="email" name="email" id="email">
-						<label>Message</label>
-						<textarea name="message" id="message" cols="30" rows="10"></textarea>
+						<label for="nom">Nom</label>
+						<input type="text" name="nom" id="nom" required placeholder="Entrez votre nom">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" required placeholder="exemple@domaine.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+						<label for="message">Message</label>
+						<textarea name="message" id="message" cols="30" rows="10" required placeholder="Entrez votre message"></textarea>
 						<input type="submit" value="Envoyer"/>
 					</form>
 				</div>
 				<div class="picture right">
-					<img src="./assets/images/camera.webp"alt="Photo d'une camera noire"/>
+					<img src="./assets/images/camera.webp" loading="lazy" alt="Photo d'une camera noire"/>
 				</div>
 			</div>
 		</section>
 	</main>
 	<footer>
-		<p>Copyright 2021 - Tous droits réservés</p>
-		<p>Site realise par Nina Carducci</p>
-		<p>Photographe professionnelle</p>
-		<p>Paris - Ile-de-France</p>
-		<p>Tel : 01 23 45 67 89</p>
-		<p>Email : <a href="mailto:U5qkZ@example.com">U5qkZ@example.com</a></p>
+		<div>
+			<address>
+				<span>68 avenue Alsace-Lorraine</span>, <span>Bordeaux</span>,
+				<span>33200</span>
+			</address>
+			<p>Téléphone : <a href="tel:0556677889">05 56 67 78 89</a></p>
+			<p>Horaires d'ouverture : Lundi - Vendredi de 10h à 19h.</p>
+			
+		</div>
 	</footer>
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
